@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(26, 0, 62);
+    color: white;
+}
+
+/*container*/
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/*container*/
+
+
+/*header*/
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+/*header*/
+
+/*input*/
+input {
+    background-color: rgb(8, 0, 19);
+    color: white;
+    margin: .5rem 0;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    transition: transform .3s ease-in-out;
+    border-radius: .5rem;
+}
+
+input:focus {
+    outline: .1rem #aaa solid;
+    transform: scale(1.01);
+}
+
+/*input*/
+
+
+/*price*/
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price>input {
+    flex: 1;
+    margin-right: .5rem;
+}
+
+#total {
+    background-color: purple;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+#total::before {
+    content: "total: ";
+}
+
+#total::after {
+    content: "$";
+}
+
+/*price*/
+
+/*button*/
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #470053;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background-color: rgb(108, 0, 108);
+    letter-spacing: .05rem;
+}
+
+/*button*/
+
+/*output section*/
+.outputs {
+    margin-top: 1rem;
+}
+
+/*output section*/
+
+
+/*search buttons*/
+.search-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-buttons>button {
+    width: 49%;
+}
+
+/*search buttons*/
+
+
+/*delete all button*/
+#delete-all {
+    margin: 1rem 0;
+}
+
+/*delete all button*/
+
+
+/*table*/
+table {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: .5rem;
+}
+
+/*table*/
+
+
+/*button crud*/
+#update {
+    background-color: green;
+}
+
+#delete {
+    background-color: darkred;
+}
+
+/*button crud*/
